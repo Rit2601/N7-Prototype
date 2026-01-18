@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: n7-prototype
+    env: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: gunicorn -w 2 -b 0.0.0.0:10000 backend.app:create_app()

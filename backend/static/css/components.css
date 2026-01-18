@@ -1,0 +1,105 @@
+/* NAV */
+.nav{
+    position:sticky;top:0;z-index:999;
+    background:rgba(0,0,0,.35);
+    backdrop-filter: blur(14px);
+    padding:18px 0;
+  }
+  .nav__inner{
+    width:min(1200px,92%);
+    margin:0 auto;
+    height:60px;
+    background:rgba(255,255,255,.09);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    padding:0 20px;
+    gap:22px;
+  }
+  .nav__brand{
+    font-weight:700;
+    letter-spacing:.5px;
+  }
+  .nav__links{
+    display:flex;
+    gap:26px;
+    margin-left:18px;
+    flex:1;
+    justify-content:center;
+    font-size:13px;
+    opacity:.9;
+  }
+  .nav__link{
+    display:flex;align-items:center;gap:6px;
+    cursor:pointer;
+  }
+  .nav__caret{opacity:.6}
+  
+  /* BUTTONS */
+  .btn{
+    height:48px;
+    padding:0 18px;
+    border-radius:12px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:600;
+    letter-spacing:.3px;
+    font-size:13px;
+  }
+  .btn--wide{min-width:180px}
+  .btn--primary{
+    background:linear-gradient(90deg,var(--blue2),var(--blue));
+    color:#fff;
+    border:none;
+  }
+  .btn--ghost{
+    border:1px solid rgba(255,255,255,.28);
+    background:transparent;
+  }
+  .btn--outline{
+    border:1px solid rgba(255,255,255,.28);
+    background:transparent;
+  }
+  
+  /* LIST */
+  .list{list-style:none;display:flex;flex-direction:column;gap:14px;font-size:14px;color:var(--muted)}
+  .dot{
+    display:inline-block;width:12px;height:12px;border-radius:50%;
+    background:linear-gradient(180deg,#0AA2FF,#007BFF);
+    margin-right:10px;transform:translateY(1px)
+  }
+  .tick{
+    display:inline-flex;
+    width:22px;height:22px;border-radius:50%;
+    background:linear-gradient(180deg,#0AA2FF,#007BFF);
+    margin-right:10px;
+    position:relative;top:5px;
+  }
+  .tick::after{
+    content:"✓";
+    color:#fff;
+    font-weight:800;
+    font-size:12px;
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  /* tags */
+  .tag{
+    font-size:11px;
+    letter-spacing:1.2px;
+    color:rgba(10,162,255,.85);
+    margin-bottom:10px;
+  }
+  .meta{
+    margin-top:12px;
+    color:rgba(234,242,255,.55);
+    font-size:12px;
+  }
+  .link{color:rgba(10,162,255,.9);font-size:13px}
+  

@@ -1,0 +1,260 @@
+{% extends "base.html" %}
+{% block title %}N7 — Prototype{% endblock %}
+
+{% block content %}
+
+<!-- HERO (Dark) -->
+<section class="hero">
+  <div class="hero__inner">
+    <div class="hero__left">
+      <h1 class="hero__title">The new foundation<br>of modern banking</h1>
+
+      <p class="hero__subtitle">
+        We drive innovation and growth, provide seamless<br>
+        customer experience and operational excellence
+      </p>
+
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#request-demo">REQUEST DEMO</a>
+        <a class="btn btn--outline" href="#contact-us">CONTACT US</a>
+      </div>
+
+      <div class="hero__trusted">
+        <div class="hero__trusted-label">Trusted By:</div>
+        <div class="hero__trusted-logos">
+          <span>SHELLS</span>
+          <span>SmartFinder</span>
+          <span>Zoomerr</span>
+          <span>ArtVenue</span>
+          <span>Kontrastr</span>
+          <span>WAVESMARATHON</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__right">
+      <!-- Use your provided composite image -->
+      <img class="hero__mock" src="{{ url_for('static', filename='img/Frame 114.png') }}" />
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTIONS GRID -->
+<section class="solutions">
+  <div class="solutions__inner">
+    <div class="solutions__intro">
+      <h2 class="solutions__title">All of our solutions are<br>tailor-made to your needs</h2>
+      <a class="btn btn--outline btn--wide" href="#request-demo">REQUEST DEMO</a>
+    </div>
+
+    <div class="solutions__grid">
+      <article class="solution-card">
+        <div class="solution-card__icon">
+          <img src="{{ url_for('static', filename='img/Vector.png') }}" alt="">
+        </div>
+        <h3 class="solution-card__title">Core Banking CB7</h3>
+        <p class="solution-card__text">
+          CB7 helps your financial institution improve the client experience,
+          automate and optimize procedures, simplify banking operations for your
+          employees, improve risk management, increase productivity, and ensure full regulatory compliance.
+        </p>
+        <a class="solution-card__link" href="#">LEARN MORE <span>→</span></a>
+      </article>
+
+      <article class="solution-card">
+        <div class="solution-card__icon">
+          <img src="{{ url_for('static', filename='img/Vector-1.png') }}" alt="">
+        </div>
+        <h3 class="solution-card__title">Digital Banking N7</h3>
+        <p class="solution-card__text">
+          N7 brings full capabilities across strategy, human-centred design,
+          operations, engineering and data science to create and deliver disruptive innovation.
+          Our approach to building digital banks is specifically designed to help clients
+        </p>
+        <a class="solution-card__link" href="#">LEARN MORE <span>→</span></a>
+      </article>
+
+      <article class="solution-card">
+        <div class="solution-card__icon">
+          <img src="{{ url_for('static', filename='img/Vector-2.png') }}" alt="">
+        </div>
+        <h3 class="solution-card__title">Open Banking</h3>
+        <p class="solution-card__text">
+          Our API banking helps you to gain actionable insights, enable account aggregation,
+          streamline customer onboarding, KYC, and payment initiation, offer predictive budgeting
+          tools, and introduce enhanced credit scoring.
+        </p>
+        <a class="solution-card__link" href="#">LEARN MORE <span>→</span></a>
+      </article>
+
+      <article class="solution-card">
+        <div class="solution-card__icon">
+          <img src="{{ url_for('static', filename='img/Vector-3.png') }}" alt="">
+        </div>
+        <h3 class="solution-card__title">Loan Origination System</h3>
+        <p class="solution-card__text">
+          N7 brings full capabilities across strategy, human-centred design,
+          operations, engineering and data science to create and deliver disruptive innovation.
+          Our approach to building digital banks is specifically designed to help clients
+        </p>
+        <a class="solution-card__link" href="#">LEARN MORE <span>→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CORE BANKING -->
+<section class="feature feature--dark">
+  <div class="feature__inner">
+    <div class="feature__left">
+      <h2 class="feature__title">A complete cloud-based<br>core banking.</h2>
+      <p class="feature__subtitle">Faster time to market with our cloud-based<br>core banking services</p>
+
+      <a class="btn btn--primary" href="#request-demo">REQUEST DEMO</a>
+      <a class="feature__learn" href="#">LEARN MORE <span>→</span></a>
+    </div>
+
+    <div class="feature__right">
+      <img class="device" src="{{ url_for('static', filename='img/MacBook Pro 16.png') }}" alt="AML Dashboard Device">
+    </div>
+  </div>
+</section>
+
+<!-- CHECKLIST SECTION -->
+<section class="checklist">
+  <div class="checklist__inner">
+    <div class="checklist__left">
+      <img class="device device--shadow" src="{{ url_for('static', filename='img/Frame 98.png') }}" alt="">
+    </div>
+
+    <div class="checklist__right">
+      <h2 class="checklist__title">
+        Run a more efficient, flexible,and digitally<br>
+        connected corebanking system
+      </h2>
+
+      <div class="checklist__sub">What you will get:</div>
+
+      <div class="checklist__grid">
+        <ul class="list">
+          <li><span class="dot"></span> Customer-On Boarding</li>
+          <li><span class="dot"></span> Managing deposits and withdrawals</li>
+          <li><span class="dot"></span> Transaction management</li>
+          <li><span class="dot"></span> Interest Calculation</li>
+          <li><span class="dot"></span> Payments processing (cash, cheques, mandates, NEFT, RTGS etc)</li>
+        </ul>
+        <ul class="list">
+          <li><span class="dot"></span> CRM Activities</li>
+          <li><span class="dot"></span> Configuring New Banking Products</li>
+          <li><span class="dot"></span> Loan disbursal and Loan management</li>
+          <li><span class="dot"></span> Establishing criteria for minimum balances, interest rates, number of withdrawals allowed and so on.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIG WHITE STRIP -->
+<section class="strip">
+  <div class="strip__marquee">
+    <span class="strip__brand">N7</span>
+    <span class="strip__star">✳</span>
+    <span class="strip__text">Say</span>
+    <span class="strip__hand">👋</span>
+    <span class="strip__text">to the new way of banking</span>
+    <span class="strip__star">✳</span>
+    <span class="strip__brand">CB7</span>
+    <span class="strip__star">✳</span>
+    <span class="strip__text">Say</span>
+  </div>
+</section>
+
+<!-- LIGHT DIGITAL BANKING SECTION -->
+<section class="digital">
+  <div class="digital__inner">
+    <div class="digital__left">
+      <h2 class="digital__title">Digital banking<br>out-of-the-box</h2>
+      <p class="digital__subtitle">
+        N7 helps your financial institution improve the client<br>
+        experience, automate and optimize procedures
+      </p>
+
+      <a class="btn btn--primary" href="#request-demo">REQUEST DEMO</a>
+      <a class="digital__learn" href="#">LEARN MORE <span>→</span></a>
+    </div>
+
+    <div class="digital__center">
+      <img class="phone" src="{{ url_for('static', filename='img/iPhone 13 Pro-1.png') }}" alt="">
+    </div>
+
+    <div class="digital__right">
+      <h3 class="digital__smalltitle">Fully compliant with regulatory<br>requirement</h3>
+      <p class="digital__text">
+        The governance of risk management with regulations is achieved by our
+        risk management framework that is fully integrated to work with digital
+        bank’s operational-risk protocols and procedures.
+      </p>
+
+      <ul class="list list--ticks">
+        <li><span class="tick"></span> Pre-integrated Security System</li>
+        <li><span class="tick"></span> Fully Compliant With Regulatory Requirement</li>
+        <li><span class="tick"></span> Digitally Connected Core</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- INSIGHTS -->
+<section class="insights">
+  <div class="insights__inner">
+    <div class="insights__left">
+      <h2 class="insights__title">
+        Get yourself up-to-speed on<br>
+        all the things happening in<br>
+        fintech
+      </h2>
+      <a class="btn btn--outline btn--wide" href="#">INSIGHTS</a>
+    </div>
+
+    <div class="insights__right">
+      <div class="insights__bigcard">
+        <div class="insights__pattern">
+          <img src="{{ url_for('static', filename='img/Vector-18.png') }}" alt="">
+          <img src="{{ url_for('static', filename='img/Vector-19.png') }}" alt="">
+          <img src="{{ url_for('static', filename='img/Vector-20.png') }}" alt="">
+          <img src="{{ url_for('static', filename='img/Vector-17.png') }}" alt="">
+        </div>
+
+        <div class="insights__content">
+          <div class="tag">GETTING STARTED</div>
+          <h3>How to transition from a<br>traditional to a digital<br>bank</h3>
+          <div class="meta">David Grohl &nbsp;&nbsp; 17/08/24</div>
+          <a class="btn btn--outline btn--wide" href="#">READ MORE</a>
+        </div>
+      </div>
+
+      <div class="insights__cards">
+        {% for i in range(3) %}
+        <div class="mini-card">
+          <div class="tag">GETTING STARTED</div>
+          <h4>How to transition<br>from a traditional to a<br>digital bank</h4>
+          <div class="meta">David Grohl &nbsp;&nbsp; 17/08/24</div>
+          <a class="btn btn--outline btn--wide" href="#">READ MORE</a>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="insights__footerlink">
+        <a href="#" class="link">READ ALL INSIGHTS →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+{% include "case-studies.html" %}
+
+<!-- FOOTER DEMO -->
+{% include "footer-demo.html" %}
+
+{% endblock %}
