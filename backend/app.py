@@ -9,7 +9,8 @@ def create_app():
 
     return app
 
+# ✅ IMPORTANT: Gunicorn needs a WSGI callable named `app`
+app = create_app()
 
 if __name__ == "__main__":
-    app = create_app()
     app.run(debug=True)
